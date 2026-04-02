@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <div className={styles.homeContainer}>
-      <h1>Гра "Пам'ять"</h1>
+      <h1>Гра "Піймай Жука"</h1>
 
 
       <div style={{ height: '60px' }}>
