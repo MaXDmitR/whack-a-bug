@@ -1,0 +1,83 @@
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px); /* Сітка 4х4 */
+  gap: 15px;
+}
+
+
+.darkTheme {
+  --bg-main: #2c3e50;
+  --text-main: #ecf0f1;
+  --card-bg: #3498db;
+}
+
+.lightTheme {
+  --bg-main: #f5f6fa;
+  --text-main: #2f3640;
+  --card-bg: #74b9ff; /* Світліший синій для світлої теми */
+}
+
+/* Стиль для головних кнопок (Спробувати ще) */
+.btnPrimary {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  margin-top: 15px;
+}
+
+.btnPrimary:hover {
+  background-color: #2ecc71;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.btnmenu {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff4000;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  margin-top: 15px;
+}
+
+.btnmenu:hover {
+  background-color: #d33602;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
