@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
-import { FaBug } from 'react-icons/fa'; // Використовуємо одну іконку бага
+import { FaBug } from 'react-icons/fa'; 
 import { incrementScore, resetScore, setBestScore } from '../../store/gameSlice';
 import styles from '../../App.module.css';
 
@@ -81,21 +81,21 @@ function Game() {
               style={{
                 width: '80px',
                 height: '80px',
-                // Колір міняється на червоний, якщо там баг
+               
                 backgroundColor: index === activeCell ? '#e74c3c' : 'var(--card-bg)', 
-                color: 'white', // Зробимо текст білим для обох станів
+                color: 'white', 
                 borderRadius: '10px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 cursor: 'pointer',
                 fontSize: '2.5rem',
-                fontWeight: 'bold', // Знак питання буде жирним
-                transition: 'background-color 0.2s ease', // Плавна зміна кольору
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' // Тінь, щоб виглядали як картки
+                fontWeight: 'bold', 
+                transition: 'background-color 0.2s ease',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' 
               }}
             >
-              {/* Тернарний оператор: іконка або знак питання */}
+             
               {index === activeCell ? <FaBug color="white" /> : '?'}
             </div>
           ))}

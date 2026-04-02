@@ -5,7 +5,7 @@ import Home from './pages/Home/Home';
 import Game from './pages/Game/Game';
 import styles from './App.module.css';
 
-// Створюємо компонент-обгортку, щоб мати доступ до ThemeContext для зміни фону всього додатку
+
 const AppContent = () => {
   const { theme } = useContext(ThemeContext);
 
