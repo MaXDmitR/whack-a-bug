@@ -84,7 +84,7 @@ function Game() {
                
                 backgroundColor: index === activeCell ? '#e74c3c' : 'var(--card-bg)', 
                 color: 'white', 
-                borderRadius: '10px',
+                borderRadius: 10,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
